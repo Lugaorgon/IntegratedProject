@@ -5,38 +5,42 @@
   box-sizing: border-box;
 }
 .encolumnar {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
   margin-bottom: 30px;
   border-bottom: 0.5px solid gray;
+}
+.encolumnar section {
+  width: 47%;
 }
 /*-----------------Títulos---------------*/
 h1,
 h2,
 h3,
-h4 {
+.item {
   color: black;
 }
 h2,
 h3 {
   font-size: 20px;
   background-color: #fcee21;
+  display: inline;
 }
 h2 {
   font-weight: none;
 }
 h3 {
   font-size: 26px;
-  background-color: #fcee21;
-  display: inline;
 }
 h4 {
+  display: inline;
   margin: 0;
+  padding: 10px;
   font-size: 51px;
   color: white;
   background-color: black;
   line-height: 100px;
-  padding: 10px;
-  display: inline;
 }
 /*-----------------Listas---------------*/
 ul {
@@ -54,7 +58,7 @@ body {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   width: 75%;
-  margin: 0;
+  margin: 0 auto;
 }
 /*----------------Header---------------*/
 header,
@@ -64,19 +68,19 @@ footer {
   width: 100%;
 }
 header h1 {
-  font-weight: 700;
   font-size: 41px;
+  font-weight: 700;
 }
 header img {
   width: 70%;
   margin-left: 30%;
 }
-.grande {
-  font-size: 100px;
-  font-family: "Coiny", cursive;
-}
 header.encolumnar {
   border-bottom: none;
+}
+.grande {
+  font-size: 80px;
+  font-family: "Coiny", cursive;
 }
 /*----------------Main---------------*/
 main {
@@ -84,20 +88,19 @@ main {
 }
 /*----------------NavBar---------------*/
 nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   padding: 20px;
 }
-nav h1,
-footer h1 {
-  font-family: "Coiny", cursive;
+nav h1 {
+  font-family: 'Coiny', cursive;
   margin-right: auto;
 }
-nav a,
-footer a {
+nav a {
   margin-left: 20px;
   color: #7a7a7a;
   text-decoration: none;
-}
-nav a {
   text-transform: capitalize;
 }
 nav a:hover {
@@ -107,6 +110,9 @@ nav a:hover {
 /* section {
   width: 45%;
 } */
+.services img {
+  width: 100%;
+}
 .item {
   font-size: 24px;
   font-weight: bold;
@@ -137,11 +143,24 @@ input {
   height: 40px;
   margin-bottom: 8px;
 }
-input textarea {
+input,
+textarea {
   width: 100%;
 }
+.boton {
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
 /*----------------Aside---------------*/
+aside {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
 aside img {
+  text-align: center;
   height: auto;
   width: 50%;
 }
@@ -150,11 +169,18 @@ aside.encolumnar {
 }
 /*----------------Footer---------------*/
 footer {
+  display: flex;
+  align-items: center;
   height: 100px;
   padding: 10px;
   background-color: #fcee21;
 }
 footer h1 {
-  font-family: "Coiny," cursive;
+  font-family: 'Coiny', cursive;
   font-size: 33px;
+}
+footer a {
+  margin-left: 20px;
+  color: #7a7a7a;
+  text-decoration: none;
 }
